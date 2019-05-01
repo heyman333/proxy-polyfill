@@ -42,7 +42,7 @@ module.exports = function proxyPolyfill() {
     let throwRevoked = function() {};
     lastRevokeFn = function() {
       throwRevoked = function(trap) {
-        throw new TypeError("Cannot perform on a proxy that has been revoked";
+        throw new TypeError("Cannot perform on a proxy that has been revoked");
       };
     };
 
